@@ -7,7 +7,6 @@ class Joke extends React.Component {
     this.upVote = this.upVote.bind(this);
     this.downVote = this.downVote.bind(this);
     this.vote = props.vote;
-    this.votes = props.votes;
     this.text = props.text;
     this.id = props.id;
   }
@@ -32,7 +31,7 @@ class Joke extends React.Component {
             <i className="fas fa-thumbs-down" />
           </button>
 
-          {this.votes}
+          {this.props.votes}
         </div>
 
         <div className="Joke-text">{this.text}</div>
